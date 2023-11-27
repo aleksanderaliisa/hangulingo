@@ -1,16 +1,21 @@
 
-from new_game import new_game
-from resume import resume
+from game import game
 from verbs import add_verb
 
 
 option = int(input("Enter 1 to start a game\n 2 to resume a game\n 3 to add a verb\n"))
 
 if option==1:
-     new_game()
+    pseudo = input("enter your pseudo")
+    score = 0  
+    game(pseudo, 0)
     
 elif option ==2:
-    resume()
+    pseudo = input("enter your pseudo")
+    score_file = open("scores.txt","r")
+    #search score in the file
+    game(pseudo, score)
+
         
 elif option ==3:
     add_verb()

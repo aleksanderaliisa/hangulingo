@@ -1,2 +1,0 @@
-def resume():
-    print("resume")
