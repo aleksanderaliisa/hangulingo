@@ -1,8 +1,11 @@
 import random
 
 def game(pseudo, score):
-<<<<<<< HEAD
     print("let's start the game")
+    
+    print("let's start the game\n")
+    print ("score: "+ score + "pseudo:"+ pseudo)
+
 
 def load_words_from_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
@@ -42,8 +45,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-=======
-    print("let's start the game\n")
-    print ("score: "+ score + "pseudo:"+ pseudo)
->>>>>>> d2a9a4dce33691cb4e2aa91dc986e7de32c22d37
